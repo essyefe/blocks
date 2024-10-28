@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*font-family: "Press Start 2P", system-ui;*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('../../images/minecraft-background.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* << ------------------------------ Navbar ------------------------------ >> */
+.box-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 130px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 85%;
+    height: 90%;
+    border-bottom: 9px solid white;
+}
+
+.logo-navbar {
+    font-size: 6vmin;
+    font-family: "Press Start 2P", system-ui;
+    color: white;
+    font-weight: 100
+}
+
+.link-logo-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 12vmin;
+}
+
+.img-logo-navbar {
+    width: 100%;
+    height: 100%;
+}
+
+/* << ------------------------------ Main ------------------------------ >> */
+.box-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 250px;
+}
+
+.title {
+    display: flex;
+    align-items: end;
+    width: 85%;
+    height: 100%;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    color: white;
+    font-size: 6vmin;
+}
+
+.conteiner-init-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+}
+
+.box-init-button {
+    display: flex;
+    align-items: center;
+    width: 85%;
+    height: 100%;
+}
+
+.init-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 4vmin;
+    border: 5px solid white;
+    width: 25%;
+    height: 60%;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.init-button:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px 3px rgb(255, 255, 255);
+}
+
+/* << ------------------------------ @media ------------------------------ >> */
+
+@media only screen and (max-width : 600px) {
+
+    .title {
+        align-items: center;
+    }
+    .init-button {
+        width: 50%;
+    }
+}
